@@ -230,7 +230,7 @@
 
 <div id="info">
   <div class="title myhideable" style="margin-left: 200px;">
-    <span>Rudol'f Nureev’s Global Travel, 1955-92 (Interactive Space-Time Mapping)</span>
+    <span>Rudol'f Nureev’s Global Travel, 1975-76 (Interactive Space-Time Mapping)</span>
   </div>
   <div class="description myhideable" style="margin-left: 200px; padding-top: 10px;">
     <span>Interactive space-time mapping to visualize the Everyday Itinerary dataset manually curated by Silvia Garzarella for <i>Nureev’s travel Data.</i></span>
@@ -901,7 +901,7 @@
     var poleNames = {}
     var pathNames = {}
     var sphereNames = {}
-    var fullItinerary = is5053 ? ['???---Paris---31 Aug, 1992'] : ['???---Moscow---Jan 1, 1955']
+    var fullItinerary = is5053 ? ['???---Los Angeles---15 Feb, 1976'] : ['???---Edinburgh---Sep 1, 1975']
     var currentStayDate
     var tourIntId, tourType = undefined, tourState = 'off' // off, on, to-stop, one-move
     
@@ -933,7 +933,7 @@
       }
       else {
         $handle[0].style.borderColor = isForwardColor ? '#fee085' : '#d51020' // no longer asking is5053 here
-        $tooltip.html(is5053 ? 'Paris - 31 Aug, 1992' : 'Moscow - Jan 1, 1955')
+        $tooltip.html(is5053 ? 'Los Angeles - 5 Feb, 1976' : 'Edinburgh - Sep 1, 1975')
       }
       if (tourState != 'on' && tourState != 'one-move') {
           if (val == 0)
